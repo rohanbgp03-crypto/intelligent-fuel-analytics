@@ -1,0 +1,40 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> intelligent-fuel-analytics@2.0.0 test
+> npm run test -w server && npm run test -w client
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ifca-server@2.0.0 test
+> vitest run
+
+
+ RUN  v3.2.7 /workspace/scratch/ecbcc58853e8/intelligent-fuel-analytics/server
+
+ ✓ tests/integration.test.js (12 tests) 3434ms
+   ✓ Authenticated MongoDB API integration > registers independent owners, hashes passwords, and never exposes hash  732ms
+   ✓ Authenticated MongoDB API integration > persists and isolates a validated ML response using an explicit service test double  358ms
+   ✓ Authenticated MongoDB API integration > saves settings, rejects wrong passwords, revokes sessions after change  1589ms
+ ✓ tests/live-ml.test.js (1 test) 2036ms
+ ✓ tests/calculations.test.js (6 tests) 11ms
+
+ Test Files  3 passed (3)
+      Tests  19 passed (19)
+   Start at  14:51:38
+   Duration  6.85s (transform 99ms, setup 0ms, collect 842ms, tests 5.48s, environment 0ms, prepare 162ms)
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ifca-client@2.0.0 test
+> vitest run
+
+
+ RUN  v3.2.7 /workspace/scratch/ecbcc58853e8/intelligent-fuel-analytics/client
+
+ ✓ src/utils.test.ts (4 tests) 3ms
+
+ Test Files  1 passed (1)
+      Tests  4 passed (4)
+   Start at  14:51:46
+   Duration  379ms (transform 49ms, setup 0ms, collect 40ms, tests 3ms, environment 0ms, prepare 189ms)
+

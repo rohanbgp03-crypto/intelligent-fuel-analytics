@@ -1,0 +1,295 @@
+{
+  "model": "RandomForestRegressor",
+  "target": "fuel efficiency (km/L)",
+  "dataset_source": "synthetic development data",
+  "experimental": true,
+  "seed": 42,
+  "split": "GroupShuffleSplit by vehicle_id; 80/20 vehicle holdout",
+  "rows_before_cleaning": 1344,
+  "rows": 1344,
+  "train_rows": 1064,
+  "test_rows": 280,
+  "train_vehicles": 38,
+  "test_vehicles": 10,
+  "group_overlap": false,
+  "metrics": {
+    "mae": 1.1569389613929113,
+    "rmse": 1.956717820864556,
+    "r2": 0.9700323666965793
+  },
+  "baseline_metrics": {
+    "mae": 8.832392550557593,
+    "rmse": 11.327027626628244,
+    "r2": -0.004217914539876411
+  },
+  "ranges": {
+    "engine_l": [
+      0.18218061545765196,
+      5.3355942453839855
+    ],
+    "weight_kg": [
+      142.96161364494833,
+      7379.970101965927
+    ],
+    "distance_km": [
+      10.976245772236412,
+      349.9202145508769
+    ],
+    "avg_speed": [
+      15.051874416570552,
+      114.94219092241879
+    ],
+    "idle_minutes": [
+      0.016676676124154355,
+      39.988594042515714
+    ]
+  },
+  "test_examples": [
+    {
+      "actual": 5.6629158924042375,
+      "predicted": 5.55765098333806
+    },
+    {
+      "actual": 5.441135274373706,
+      "predicted": 5.8615475492768265
+    },
+    {
+      "actual": 5.259752471157567,
+      "predicted": 5.528089232465912
+    },
+    {
+      "actual": 5.665175736585464,
+      "predicted": 5.947317781438573
+    },
+    {
+      "actual": 5.5823593076358256,
+      "predicted": 5.51394725870118
+    },
+    {
+      "actual": 5.515099502754645,
+      "predicted": 5.877241477473772
+    },
+    {
+      "actual": 5.655802283315369,
+      "predicted": 5.548097374233023
+    },
+    {
+      "actual": 5.539191876059292,
+      "predicted": 5.513633099969189
+    },
+    {
+      "actual": 5.213599925749269,
+      "predicted": 5.528089232465912
+    },
+    {
+      "actual": 5.649398407659543,
+      "predicted": 6.000881636225568
+    },
+    {
+      "actual": 5.683835028379096,
+      "predicted": 5.880473244210307
+    },
+    {
+      "actual": 5.361790669288681,
+      "predicted": 5.546535409003532
+    },
+    {
+      "actual": 5.644924158378977,
+      "predicted": 5.877241477473772
+    },
+    {
+      "actual": 5.632167799560195,
+      "predicted": 5.861821421459333
+    },
+    {
+      "actual": 5.275799416996122,
+      "predicted": 5.54550115527065
+    },
+    {
+      "actual": 5.421565624343537,
+      "predicted": 5.484473029670289
+    },
+    {
+      "actual": 5.876986657463583,
+      "predicted": 5.858772101814348
+    },
+    {
+      "actual": 5.4553533780073815,
+      "predicted": 5.885315276868762
+    },
+    {
+      "actual": 6.21964631700924,
+      "predicted": 6.075052087063389
+    },
+    {
+      "actual": 5.432426405513638,
+      "predicted": 5.86223604509027
+    },
+    {
+      "actual": 5.992504569499248,
+      "predicted": 6.060800726691154
+    },
+    {
+      "actual": 5.563363030080956,
+      "predicted": 5.514537701240309
+    },
+    {
+      "actual": 5.490886728158292,
+      "predicted": 5.83993312836792
+    },
+    {
+      "actual": 5.864510372262307,
+      "predicted": 6.027000731963562
+    },
+    {
+      "actual": 5.800445033642755,
+      "predicted": 5.858144539697464
+    },
+    {
+      "actual": 5.785429577519366,
+      "predicted": 6.025804771282214
+    },
+    {
+      "actual": 5.558070156529895,
+      "predicted": 5.470733155488024
+    },
+    {
+      "actual": 5.983325170118633,
+      "predicted": 5.984475827039621
+    },
+    {
+      "actual": 37.29709932905555,
+      "predicted": 35.78907990131369
+    },
+    {
+      "actual": 24.89182625984744,
+      "predicted": 24.78594274031743
+    },
+    {
+      "actual": 33.11446930629224,
+      "predicted": 33.899371950572274
+    },
+    {
+      "actual": 25.157485967912248,
+      "predicted": 23.621179238727297
+    },
+    {
+      "actual": 38.95696648293573,
+      "predicted": 34.875504385473555
+    },
+    {
+      "actual": 53.656219812121385,
+      "predicted": 52.01984938228103
+    },
+    {
+      "actual": 26.539217281991938,
+      "predicted": 25.819986206020538
+    },
+    {
+      "actual": 20.449556537258392,
+      "predicted": 20.847064083514965
+    },
+    {
+      "actual": 23.57920491089135,
+      "predicted": 28.362777067990137
+    },
+    {
+      "actual": 21.210059412164295,
+      "predicted": 22.904176137808943
+    },
+    {
+      "actual": 32.15710696853916,
+      "predicted": 33.198893083127565
+    },
+    {
+      "actual": 38.78720550077052,
+      "predicted": 38.17319411898868
+    },
+    {
+      "actual": 24.52131802430836,
+      "predicted": 22.51453846221318
+    },
+    {
+      "actual": 23.918883728466657,
+      "predicted": 23.64060847423093
+    },
+    {
+      "actual": 34.75799495927671,
+      "predicted": 35.541630527486404
+    },
+    {
+      "actual": 41.56583924189621,
+      "predicted": 37.20397409499169
+    },
+    {
+      "actual": 33.57051050985966,
+      "predicted": 33.96702358745047
+    },
+    {
+      "actual": 25.55040709660051,
+      "predicted": 24.441781763715372
+    },
+    {
+      "actual": 35.81589398485131,
+      "predicted": 35.52100399238883
+    },
+    {
+      "actual": 28.23019486372928,
+      "predicted": 26.785385686715674
+    },
+    {
+      "actual": 38.366781966093455,
+      "predicted": 37.784285604025115
+    },
+    {
+      "actual": 29.13895806777051,
+      "predicted": 32.38689401120639
+    },
+    {
+      "actual": 33.298891759678945,
+      "predicted": 36.63389871467402
+    },
+    {
+      "actual": 22.573152902989793,
+      "predicted": 23.025334725767145
+    },
+    {
+      "actual": 28.377958755046453,
+      "predicted": 32.70755091126818
+    },
+    {
+      "actual": 38.5608992120868,
+      "predicted": 37.96007000496516
+    },
+    {
+      "actual": 33.46423896473711,
+      "predicted": 33.63149783825153
+    },
+    {
+      "actual": 35.667961794202554,
+      "predicted": 36.34328041692663
+    },
+    {
+      "actual": 6.0099181620533395,
+      "predicted": 5.850211842895711
+    },
+    {
+      "actual": 5.928941018011812,
+      "predicted": 5.830056618739292
+    },
+    {
+      "actual": 5.982051353333699,
+      "predicted": 5.846680313015674
+    },
+    {
+      "actual": 6.485040858994646,
+      "predicted": 6.1101644334079515
+    }
+  ],
+  "limitations": [
+    "Synthetic development metrics are not empirical real-world accuracy.",
+    "No traffic causation, live telemetry or confidence interval is established.",
+    "Grouped holdout prevents shared vehicle IDs; future-time validation is still needed.",
+    "Predictions depend on dataset coverage and measurement quality."
+  ]
+}

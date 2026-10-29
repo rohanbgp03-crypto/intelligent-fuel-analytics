@@ -1,0 +1,28 @@
+{
+  "name": "intelligent-fuel-analytics",
+  "version": "2.0.0",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently -n API,WEB,ML -c blue,green,yellow \"npm run dev -w server\" \"npm run dev -w client\" \"python -m uvicorn app:app --app-dir ml-service --host 127.0.0.1 --port 8001\"",
+    "build": "npm run build -w client",
+    "test": "npm run test -w server && npm run test -w client",
+    "test:python": "python -m pytest ml-service/tests -q",
+    "lint": "eslint client/src server/src",
+    "format": "prettier --write client/src server/src",
+    "seed": "npm run seed -w server",
+    "demo": "node scripts/demo.mjs"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "eslint": "^9.34.0",
+    "@eslint/js": "^9.34.0",
+    "typescript-eslint": "^8.42.0",
+    "globals": "^16.3.0",
+    "prettier": "^3.6.2"
+  },
+  "type": "module"
+}
